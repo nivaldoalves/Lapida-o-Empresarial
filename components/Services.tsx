@@ -9,14 +9,16 @@ const ServiceCard: React.FC<{
   color: string;
 }> = ({ title, description, icon, color }) => (
   <div className="shine-effect group bg-neutral-900 border border-white/5 p-10 hover:border-white/20 transition-all duration-500 flex flex-col items-start h-full">
-    <div className={`mb-8 p-4 rounded-sm bg-black border border-white/10 group-hover:scale-110 transition-transform duration-500 ${color}`}>
+    <div className={`mb-8 p-4 rounded-sm bg-black border border-white/10 transition-all duration-500 group-hover:border-white/30 group-hover:scale-110 animate-pulse-luxury ${color}`}>
       {icon}
     </div>
     <h3 className="font-serif-luxury text-xl mb-4 group-hover:text-white transition-colors">{title}</h3>
     <p className="text-white/60 leading-relaxed text-sm mb-8 flex-grow">
       {description}
     </p>
-    <div className="h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-700"></div>
+    <div className="w-full h-px bg-white/5 relative overflow-hidden">
+      <div className="absolute inset-0 mx-auto w-0 group-hover:w-full bg-gradient-to-r from-transparent via-white/40 to-transparent transition-all duration-1000 ease-out h-full"></div>
+    </div>
   </div>
 );
 
