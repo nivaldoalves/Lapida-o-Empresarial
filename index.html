@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lapidação Empresarial | Excelência em Posicionamento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .font-serif-luxury {
+        font-family: 'Cinzel', serif;
+      }
+      .font-display {
+        font-family: 'Playfair Display', serif;
+      }
+      
+      /* Shine/Diamond Effect */
+      .shine-effect {
+        position: relative;
+        overflow: hidden;
+      }
+      .shine-effect::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          45deg,
+          transparent 0%,
+          rgba(255, 255, 255, 0.1) 45%,
+          rgba(255, 255, 255, 0.5) 50%,
+          rgba(255, 255, 255, 0.1) 55%,
+          transparent 100%
+        );
+        transform: rotate(45deg);
+        transition: all 0.7s ease;
+        opacity: 0;
+      }
+      .shine-effect:hover::after {
+        left: 100%;
+        top: 100%;
+        opacity: 1;
+      }
+
+      /* Luxury Glitch Animation */
+      @keyframes glitch-skew {
+        0% { transform: skew(0deg); }
+        20% { transform: skew(-8deg); }
+        24% { transform: skew(10deg); }
+        28% { transform: skew(0deg); }
+        70% { transform: skew(0deg); }
+        72% { transform: skew(-5deg); }
+        75% { transform: skew(2deg); }
+        100% { transform: skew(0deg); }
+      }
+
+      @keyframes glitch-anim-1 {
+        0% { clip-path: inset(20% 0 50% 0); transform: translate(-5px, -2px); }
+        10% { clip-path: inset(10% 0 80% 0); transform: translate(5px, 2px); }
+        20% { clip-path: inset(80% 0 10% 0); transform: translate(-5px, 2px); }
+        30% { clip-path: inset(40% 0 40% 0); transform: translate(5px, -2px); }
+        40% { clip-path: inset(0 0 0 0); transform: translate(0); }
+        100% { clip-path: inset(0 0 0 0); transform: translate(0); }
+      }
+
+      .glitch-active {
+        position: relative;
+        animation: glitch-skew 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+      
+      .glitch-active::before,
+      .glitch-active::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+      }
+
+      .glitch-active::before {
+        left: 2px;
+        text-shadow: -2px 0 #D4AF37;
+        animation: glitch-anim-1 2s infinite linear alternate-reverse;
+      }
+
+      .glitch-active::after {
+        left: -2px;
+        text-shadow: 2px 0 #50C878;
+        animation: glitch-anim-1 3s infinite linear alternate-reverse;
+      }
+
+      /* Custom animations */
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float {
+        animation: float 4s ease-in-out infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
