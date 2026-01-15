@@ -31,7 +31,7 @@ export const Navbar: React.FC = () => {
         <div className="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
           <a
             href="#inicio"
-            className="text-white/70 hover:text-white transition-colors relative group"
+            className="text-white/70 hover:text-[#D4AF37] transition-colors relative group"
           >
             Início
             <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#D4AF37] transition-all group-hover:w-full"></span>
