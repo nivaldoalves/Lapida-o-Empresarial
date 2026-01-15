@@ -21,32 +21,45 @@ export const Navbar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <div className="flex items-center space-x-2">
-          <Diamond className="text-emerald-500 w-6 h-6" />
+        <a href="#inicio" className="flex items-center space-x-2 group">
+          <Diamond className="text-emerald-500 w-6 h-6 group-hover:rotate-45 transition-transform duration-500" />
           <span className="font-serif-luxury text-xl tracking-widest text-white uppercase">
             Lapidação Empresarial
           </span>
-        </div>
+        </a>
 
         <div className="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
-          <a href="#inicio" className="hover:text-gold-500 transition-colors">
+          <a
+            href="#inicio"
+            className="text-white/70 hover:text-white transition-colors relative group"
+          >
             Início
+            <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#D4AF37] transition-all group-hover:w-full"></span>
           </a>
-          <a href="#sobre" className="hover:text-emerald-500 transition-colors">
+          <a
+            href="#sobre"
+            className="text-white/70 hover:text-[#50C878] transition-colors relative group"
+          >
             A Empresa
+            <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#50C878] transition-all group-hover:w-full"></span>
           </a>
           <a
             href="#servicos"
-            className="hover:text-emerald-500 transition-colors"
+            className="text-white/70 hover:text-emerald-500 transition-colors relative group"
           >
             Serviços
+            <span className="absolute -bottom-1 left-0 w-0 h-px bg-emerald-500 transition-all group-hover:w-full"></span>
           </a>
-          <a href="#contato" className="hover:text-red-500 transition-colors">
+          <a
+            href="#contato"
+            className="text-white/70 hover:text-[#FF0000] transition-colors relative group"
+          >
             Contato
+            <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#FF0000] transition-all group-hover:w-full"></span>
           </a>
         </div>
 
-        <button className="md:hidden text-white">
+        <button className="md:hidden text-white" aria-label="Menu">
           <svg
             className="w-6 h-6"
             fill="none"
