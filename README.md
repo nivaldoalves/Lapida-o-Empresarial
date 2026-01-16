@@ -1,20 +1,50 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Lapidação Empresarial
 
-# Run and deploy your AI Studio app
+Uma aplicação web moderna desenvolvida para apresentar serviços de lapidação empresarial com design responsivo e elegante.
 
-This contains everything you need to run your app locally.
+## Características
 
-View your app in AI Studio: https://ai.studio/apps/drive/1c7C_Q-HCg8hY_ji136kH0MhPMMio75QZ
+- Interface responsiva e moderna com design elegante
+- Seções principais: Home, Sobre, Serviços e Contato
+- Navegação intuitiva com navbar interativa
+- Layout otimizado para desktop e dispositivos móveis
+- Componentes reutilizáveis em React
+- Temas visuais com suporte a estilização personalizada
+- Ícones vetoriais de alta qualidade via Lucide React
+- Seleção de texto com tema personalizado (verde esmeralda)
 
-## Run Locally
+## Tecnologias Utilizadas
 
-**Prerequisites:**  Node.js
+- **React** 19.2.3 - Biblioteca JavaScript para construção de interfaces
+- **TypeScript** 5.8.2 - Linguagem tipada para JavaScript
+- **Vite** 6.2.0 - Bundler e servidor de desenvolvimento rápido
+- **Tailwind CSS** - Framework de utilidades CSS para estilização
+- **Lucide React** 0.562.0 - Biblioteca de ícones SVG
+- **Node.js** - Ambiente de execução JavaScript
 
+## Demonstração
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+A aplicação apresenta:
+
+- **Navbar**: Navegação fixa com links para as principais seções
+- **Hero**: Banner inicial com destaque para a marca
+- **About**: Informações sobre a empresa e sua missão
+- **Services**: Catálogo dos serviços oferecidos
+- **Contact**: Formulário e informações de contato
+- **Footer**: Rodapé com informações adicionais
+
+## Testes
+
+Para validar o funcionamento da aplicação:
+
+Em desenvolvimento.
+
+## Licença
+
+MIT - Sinta-se livre para usar, modificar e distribuir este projeto conforme necessário.
+
+## Autor
+
+https://github.com/nivaldoalves
+
+Desenvolvido como projeto de apresentação de serviços de lapidação empresarial.
